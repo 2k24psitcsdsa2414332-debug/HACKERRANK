@@ -1,4 +1,4 @@
-  #include <assert.h>
+#include <assert.h>
 #include <ctype.h>
 #include <limits.h>
 #include <math.h>
@@ -42,13 +42,13 @@ int main()
 
     char** first_multiple_input = split_string(rtrim(readline()));
 
-    int r = parse_int(*(first_multiple_input + 0));
+    long long r = parse_int(*(first_multiple_input + 0));
 
-    int c = parse_int(*(first_multiple_input + 1));
+    long long c = parse_int(*(first_multiple_input + 1));
 
-    int result = strangeGrid(r, c);
+    long long result = strangeGrid(r, c);
 
-    fprintf(fptr, "%d\n", result);
+    fprintf(fptr, "%lld\n", result);
 
     fclose(fptr);
 
